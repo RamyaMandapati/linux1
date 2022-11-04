@@ -19,7 +19,7 @@
 *               2. Secondary process based controls (IA32_VMX_PROCBASED_CTLS2)
 *               3. Exit controls (IA32_VMX_EXIT_CTLS)
 *               5. Entry controls (IA32_VMX_ENTRY_CTLS)
-*               6. Cannot include tertiary controls as it is Can set=No in primary controls
+*               6. Cannot include tertiary controls as it has Can set=No in primary controls
 *  10. Now, clone the git repository in the vm instance created in GCP
 *  11. Enter into the folder with cd foldername 
 *  12. install gcc and make using sudo apt install gcc make
