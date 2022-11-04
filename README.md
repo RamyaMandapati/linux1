@@ -1,6 +1,6 @@
 ## Steps to complete CMPE 283 - Assignment 1 :
 * 1. Create GCP account and setup billing.
-* 2. Install git and create a repository
+* 2. Install git and fork this repository
 * 3. Add Makefile and cmpe-283-1.c files to the repository
 * 4. Now, In GCP, go to VM instances under compute engine present in the left menu.
 * 5. Create a new VM instance, with the below specifications
@@ -20,7 +20,7 @@
 *               3. Exit controls (IA32_VMX_EXIT_CTLS)
 *               5. Entry controls (IA32_VMX_ENTRY_CTLS)
 *               6. Cannot include tertiary controls as it has Can set=No in primary controls
-*  10. Now, clone the git repository in the vm instance created in GCP
+*  10. Now, clone the git repository forked in step2, in the vm instance created in GCP
 *  11. Enter into the folder with cd foldername 
 *  12. install gcc and make using sudo apt install gcc make
 *  13. install sudo apt-get linux-headers-$(uname -r)
