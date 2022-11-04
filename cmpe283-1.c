@@ -221,7 +221,7 @@ detect_vmx_features(void)
 	rdmsr(IA32_VMX_ENTRY_CTLS, lo, hi);
 	pr_info("Entry Controls MSR: 0x%llx\n",
 		(uint64_t)(lo | (uint64_t)hi << 32));
-	report_capability(vmentry, 12, lo, hi)
+	report_capability(vmentry, 12, lo, hi);
 }
 
 /*
