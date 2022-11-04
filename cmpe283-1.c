@@ -43,7 +43,7 @@ struct capability_info pinbased[5] =
 	{ 7, "Process Posted Interrupts" }
 };
 /*
-Primary controls
+Process based Primary controls
  
 */
 struct capability_info procprimary[22] =
@@ -74,7 +74,7 @@ struct capability_info procprimary[22] =
 };
 
 /*
-Secondary Controls
+Process based Secondary Controls
 */
 struct capability_info procsecondry[27] =
 {
@@ -199,13 +199,13 @@ detect_vmx_features(void)
 		(uint64_t)(lo | (uint64_t)hi << 32));
 	report_capability(pinbased, 5, lo, hi);
 	
-	/* Procbased primary controls */
+	/* Process based primary controls */
 	rdmsr(IA32_VMX_PROCBASED_CTLS, lo, hi);
 	pr_info("Procbased primary Controls MSR: 0x%llx\n",
 		(uint64_t)(lo | (uint64_t)hi << 32));
 	report_capability(procprimary, 22, lo, hi);
 	
-	/* Procbased secondary controls */
+	/* Process based secondary controls */
 	rdmsr(IA32_VMX_PROCBASED_CTLS2, lo, hi);
 	pr_info("Procbased secondary Controls MSR: 0x%llx\n",
 		(uint64_t)(lo | (uint64_t)hi << 32));
