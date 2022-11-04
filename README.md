@@ -24,7 +24,7 @@
 *  11. install gcc and make using **sudo apt install gcc make**
 *  12. install **sudo apt-get linux-headers-$(uname -r)**
 *  13. Now, run **make** command
-*  14. If it is successfully executed, cmpe283-1.ko file is generated
+*  14. If it is successfully executed, cmpe283-1.ko kernel object file is generated
 *  15. Run command to insert .ko file **insmod ./cmpe283-1.ko**
 *  16. excecute the **dmesg** command  to view the output as below
 *  
